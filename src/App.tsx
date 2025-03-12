@@ -7,6 +7,7 @@ import Stores from './pages/Stores';
 import Sku from './pages/Sku';
 import Planning from './pages/Planning';
 import Charts from './pages/Charts';
+import AgGridtest from './pages/AgGridtest';
 
 const App: React.FC = () => {
   return (
@@ -17,10 +18,11 @@ const App: React.FC = () => {
           <Sidebar />
           <main className="flex-1 overflow-y-auto p-8 bg-gray-100">
             <Routes>
-              <Route path="/stores" element={<Stores />} />
+              <Route path="/" element={<Stores />} />
               <Route path="/skus" element={<Sku />} />
               <Route path="/planning" element={<Planning />} />
               <Route path="/charts" element={<Charts />} />
+              <Route path="/grid" element={<AgGridtest />} />
             </Routes>
           </main>
         </div>

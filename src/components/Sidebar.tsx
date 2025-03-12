@@ -7,7 +7,7 @@ const Sidebar: React.FC = () => {
         
             <ul>
                 <li className="mb-4">
-                    <Link to="/stores" className="hover:text-gray-400">Stores</Link>
+                    <Link to="/" className="hover:text-gray-400">Stores</Link>
                 </li>
                 <li className="mb-4">
                     <Link to="/skus" className="hover:text-gray-400">SKUs</Link>
@@ -18,6 +18,9 @@ const Sidebar: React.FC = () => {
                 <li className="mb-4">
                     <Link to="/charts" className="hover:text-gray-400">Charts</Link>
                 </li>
+                {/* <li className="mb-4">
+                    <Link to="/grid" className="hover:text-gray-400">Grid</Link>
+                </li> */}
             </ul>
         </div>
     );

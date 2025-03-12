@@ -53,3 +53,7 @@ export interface SKU {
   { id: "SK05194", label: "Breathable Mesh Shorts", class: "Accessories", department: "Footwear", price: 194.99, cost: 28.08 },
   // Add remaining products here as needed
 ];
+
+
+
+

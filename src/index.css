@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+.gm-high { background-color: green; color: white; }
+.gm-medium { background-color: yellow; color: black; }
+.gm-low { background-color: orange; color: black; }
+.gm-very-low { background-color: red; color: white; }

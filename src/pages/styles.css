@@ -1,0 +1,21 @@
+/* Custom cell styles with !important */
+.static-cell-style {
+  color: red !important;
+  background-color: green !important;
+}
+
+.police-cell-style {
+  color: red !important;
+  background-color: green !important;
+}
+
+/* These selectors target AG Grid v33+ structure */
+[data-theme="quartz"] .static-cell-style {
+  color: red !important;
+  background-color: green !important;
+}
+
+[data-theme="quartz"] .police-cell-style {
+  color: red !important;
+  background-color: green !important;
+}

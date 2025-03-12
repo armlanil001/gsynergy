@@ -5,13 +5,13 @@ import { storesData } from '../constants/storesData';
 // Define types for the store data
 interface Store {
   seqNo: number;
-  store: string;
+  label: string;
   city: string;
   state: string;
 }
 
 interface NewStore {
-  store: string;
+  label: string;
   city: string;
   state: string;
 }
@@ -23,7 +23,7 @@ const Stores: React.FC = () => {
   const [showAddForm, setShowAddForm] = useState<boolean>(false);
   const [showEditForm, setShowEditForm] = useState<boolean>(false);
   const [newStore, setNewStore] = useState<NewStore>({
-    store: '',
+    label: '',
     city: '',
     state: ''
   });
@@ -31,7 +31,7 @@ const Stores: React.FC = () => {
 
   // CRUD Operations
   const addStore = (): void => {
-    if (!newStore.store || !newStore.city || !newStore.state) {
+    if (!newStore.label || !newStore.city || !newStore.state) {
       alert('Please fill in all fields');
       return;
     }
@@ -45,7 +45,7 @@ const Stores: React.FC = () => {
     ];
 
     setStores(updatedStores);
-    setNewStore({ store: '', city: '', state: '' });
+    setNewStore({ label: '', city: '', state: '' });
     setShowAddForm(false);
   };
 
@@ -172,7 +172,7 @@ const Stores: React.FC = () => {
                               {store.seqNo}
                             </div>
                           </td>
-                          <td className="p-3 border-r">{store.store}</td>
+                          <td className="p-3 border-r">{store.label}</td>
                           <td className="p-3 border-r">{store.city}</td>
                           <td className="p-3 border-r">{store.state}</td>
                           <td className="p-3">
@@ -205,8 +205,8 @@ const Stores: React.FC = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Store Name</label>
                 <input
                   type="text"
-                  name="store"
-                  value={newStore.store}
+                  name="label"
+                  value={newStore.label}
                   onChange={handleInputChange}
                   className="w-full border border-gray-300 p-2 rounded"
                   placeholder="Enter store name"
@@ -263,8 +263,8 @@ const Stores: React.FC = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Store Name</label>
                 <input
                   type="text"
-                  name="store"
-                  value={editingStore.store}
+                  name="label"
+                  value={editingStore.label}
                   onChange={handleEditChange}
                   className="w-full border border-gray-300 p-2 rounded"
                 />
