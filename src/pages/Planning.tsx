@@ -48,7 +48,7 @@ const Planning: React.FC = () => {
   // Sample raw data from the table you provided
   const rawPlanningData = [
     { storeId: 'ST035', skuId: 'SK00158', week: 'W01', salesUnits: 58 },
-    { storeId: 'ST035', skuId: 'SK00158', week: 'W07', salesUnits: 107 },
+    { storeId: 'ST035', skuId: 'SK00786', week: 'W02', salesUnits: 100 },
     { storeId: 'ST035', skuId: 'SK00158', week: 'W09', salesUnits: 0 },
     { storeId: 'ST035', skuId: 'SK00158', week: 'W11', salesUnits: 92 },
     { storeId: 'ST035', skuId: 'SK00158', week: 'W13', salesUnits: 122 },

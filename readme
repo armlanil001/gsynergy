@@ -1,0 +1,71 @@
+# GSynergy React Challenge - Data Analysis PWA
+
+## Project Overview
+This Progressive Web Application (PWA) is designed for data manipulation and analysis. It allows users to manage dimensions (Stores and SKUs), enter and analyze measure data using AG-Grid, and visualize the results with charts.
+
+## Live Demo
+[Access the live application here](https://cheery-basbousa-b50027.netlify.app/)
+
+## Features
+- **Store Management**: Add, edit, remove, and reorder store dimension members
+- **SKU Management**: Add, edit, remove SKU dimension members along with their prices and costs
+- **Planning Screen**: Interactive AG-Grid with:
+  - Cross-join of Stores and SKUs along rows
+  - Calendar organized by Months and Weeks along columns
+  - Editable Sales Units
+  - Calculated Sales Dollars (Sales Units * Price)
+  - Calculated GM Dollars (Sales Dollars - Sales Units * Cost)
+  - Calculated GM % with conditional formatting
+- **Chart Visualization**: Dual-axis bar chart showing GM Dollars and GM % for selected store
+- **Responsive Design**: Optimized for screens 1080px and wider
+- **Data Import**: Ability to import sample data to prepopulate screens
+- **Authentication**: Sign-in/sign-out functionality
+
+## Technologies Used
+- React 18
+- TypeScript
+- Redux Toolkit for state management
+- AG-Grid for data grid functionality
+- Recharts for data visualization
+- Tailwind CSS for styling
+
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js (v16.x or higher)
+- npm (v8.x or higher)
+
+### Local Development
+1. Clone the repository:
+   ```
+   git clone https://github.com/GS123456_FirstName_LastName/gs-react-challenge.git
+   cd gs-react-challenge
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+4. Access the application at http://localhost:5173/
+
+### Running Tests
+```
+npm test
+```
+
+### Building for Production
+```
+npm run build
+```
+
+## Demo Credentials
+- **Email**: admin 
+- **Password**: admin
+

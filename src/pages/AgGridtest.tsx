@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { StrictMode, useCallback, useMemo, useState } from "react";
+import  {  useCallback, useMemo, useState } from "react";
 import type {
     CellClassParams,
     CellClassRules,
     ColDef,
-    GridReadyEvent,
     ValueParserParams,
 } from "ag-grid-community";
 import {
@@ -73,7 +72,7 @@ const AgGridtest = () => {
     const containerStyle = useMemo(() => ({ width: "100%", height: "100%" }), []);
     const gridStyle = useMemo(() => ({ height: "100%", width: "100%" }), []);
     const [rowData, setRowData] = useState();
-    const [columnDefs, setColumnDefs] = useState<ColDef[]>([
+    const [columnDefs] = useState<ColDef[]>([
         { field: "athlete" },
         {
             field: "age",
@@ -128,7 +127,7 @@ const AgGridtest = () => {
         };
     }, []);
 
-    const onGridReady = useCallback((params: GridReadyEvent) => {
+    const onGridReady = useCallback(() => {
         fetch("https://www.ag-grid.com/example-assets/olympic-winners.json")
             .then((resp) => resp.json())
             .then((data) => setRowData(data));
